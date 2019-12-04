@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Image Saving</title>
+</head>
+<body>
+  <label class="upload-image">Upload File
+</label>
+<input type="file" class="upload-image" id= "file">
+<button type="submit" id="upload-button" onclick="uploadFile()">SUBMIT</button>
+
+<!-- Jquery CDN -->
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-storage.js"></script>
+ 
+  <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAYwO4qwTGD9aAC0NQ34RnDjhfmwLBvwXs",
+    authDomain: "acsp-5f141.firebaseapp.com",
+    databaseURL: "https://acsp-5f141.firebaseio.com",
+    projectId: "acsp-5f141",
+    storageBucket: "acsp-5f141.appspot.com",
+    messagingSenderId: "12339292337",
+    appId: "1:12339292337:web:cf8099c7b04add093a9a90"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
